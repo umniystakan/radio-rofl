@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виджет Caster.fm</title>
+    <style>
+        /* Можно добавить базовые стили для виджета */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .cstrEmbed {
+            width: 300px; /* Ширина виджета */
+            height: 400px; /* Высота виджета */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Виджет Caster.fm -->
+    <div data-type="newStreamPlayer"
+         data-publicToken="86881f53-327f-444b-a946-74bc6fb6980a"
+         data-theme="light"
+         data-color="e81e4d"
+         data-channelId="a02b0cc8-65e5-4d50-a548-7f038efb2be6"
+         data-rendered="false"
+         class="cstrEmbed">
+        <a href="https://www.caster.fm">Shoutcast Hosting</a> 
+        <a href="https://www.caster.fm">Stream Hosting</a> 
+        <a href="https://www.caster.fm">Radio Server Hosting</a>
+    </div>
+
+    <!-- Скрипт для инициализации виджета -->
+    <script src="//cdn.cloud.caster.fm/widgets/embed.js"></script>
+
+</body>
+</html>
